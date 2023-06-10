@@ -39,3 +39,8 @@
   display: flex; /* Usar el modelo flexible para los elementos dentro de la fila */
   justify-content: space-between; /* Distribuir los elementos en la fila con espacio entre ellos */
 }
+
+h1 {
+  text-align: center; /* Centrar el texto del encabezado */
+  margin-top: 20px; /* Espaciado superior del encabezado */
+}
