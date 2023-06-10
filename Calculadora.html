@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora</title>
+  <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Enlace a un archivo CSS externo -->
+</head>
+<body>
+  <div class="calculator"> <!-- Contenedor para la calculadora -->
+    <input type="text" id="result" readonly> <!-- Campo de entrada para mostrar el resultado, se establece como solo lectura -->
+    <div class="row"> <!-- Primera fila de botones -->
+      <button onclick="clearResult()">C</button> <!-- Botón para borrar el resultado -->
+      <button onclick="backspace()">&larr;</button> <!-- Botón para eliminar el último carácter -->
+      <button onclick="appendValue('/')">/</button> <!-- Botón para añadir el operador de división -->
+      <button onclick="appendValue('*')">*</button> <!-- Botón para añadir el operador de multiplicación -->
+    </div>
+    <div class="row"> <!-- Segunda fila de botones -->
+      <button onclick="appendValue('7')">7</button>
+      <button onclick="appendValue('8')">8</button>
+      <button onclick="appendValue('9')">9</button>
+      <button onclick="appendValue('-')">-</button> <!-- Botón para añadir el operador de resta -->
+    </div>
+    <div class="row"> <!-- Tercera fila de botones -->
+      <button onclick="appendValue('4')">4</button>
+      <button onclick="appendValue('5')">5</button>
+      <button onclick="appendValue('6')">6</button>
+      <button onclick="appendValue('+')">+</button> <!-- Botón para añadir el operador de suma -->
+    </div>
+    <div class="row"> <!-- Cuarta fila de botones -->
+      <button onclick="appendValue('1')">1</button>
+      <button onclick="appendValue('2')">2</button>
+      <button onclick="appendValue('3')">3</button>
+      <button onclick="calculateResult()">=</button> <!-- Botón para calcular el resultado -->
+    </div>
+    <div class="row"> <!-- Quinta fila de botones -->
+      <button onclick="appendValue('0')">0</button>
+      <button onclick="appendValue('.')">.</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script> <!-- Inclusión de un archivo de script externo -->
+</body>
+</html>
